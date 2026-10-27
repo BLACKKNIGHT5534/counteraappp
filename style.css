@@ -18,6 +18,8 @@ h1{
 
 }
 #main_menu{
+    max-width: 400px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -36,6 +38,13 @@ h1{
 }
 
 #plus{
-    margin-right: 420px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
     color: white;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+    cursor: pointer;
 }

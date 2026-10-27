@@ -1,6 +1,10 @@
 let count = 0;
 let number = 1;
+let goal = Math.floor(Math.random() * 100) + 1;
+let best_score = 0;
+let time = 0;
 
+goal = 5
 function plus5() {
     let box5 = document.getElementById("plus5");
     let box25 = document.getElementById("plus25");
@@ -56,3 +60,16 @@ document.getElementById("random").onclick = function() {
     count = Math.floor(Math.random() * 100) + 1;
     change();
 };
+
+document.getElementById("challenge").textContent = `your goal :${goal}`
+
+document.getElementById("submit").onclick = function() {
+    if(count == goal){
+        window.alert(`You succeeded in ${time}`)
+        window.location.reload();
+        console.log("your iwnnd")
+    }
+    else{
+        window.alert("your wrong")
+    }
+}
